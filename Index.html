@@ -1,18 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Addition</title>
-  <script>
-    function addNumbers() {
-      let number1Input = document.getElementById("number1").value;
-      let number2Input = document.getElementById("number2").value;
-      let sum = Number(number1Input) + Number(number2Input);
-       
-      document.getElementById("sum").innerText = sum;
-
-    }
-  </script>
 </head>
 <body>
-<header> Arithmetic</header>
+
   <form>
     <input placeholder='Enter a number' id="number1" name="number1" type="number"><br>
     <h3>+</h3>
@@ -21,5 +15,14 @@
     <label id="sum"></label>
   </form>
 
+  <script>
+    function addNumbers() {
+      let number1Input = document.getElementById("number1").value;
+      let number2Input = document.getElementById("number2").value;
+      let sum = Number(number1Input) + Number(number2Input);
+       
+      document.getElementById("sum").innerText = sum;
+    }
+  </script>
 </body>
 </html>
