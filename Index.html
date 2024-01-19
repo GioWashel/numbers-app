@@ -1,21 +1,23 @@
 <html>
   <title>
+  </title>
     <body>
 
-    <form>
+  <form>
     
+    <input id="number1" name="number1"><br>
 
-    <input type="number" id="number1" name="number1"><br>
+    <input  id="number2" name="number2"><br><br>
 
-   
-    <input type="number" id="number2" name="number2"><br><br>
-
-    <input type="button" value="Add" onclick="addNumbers()">
+    <input type="button" value="=" onclick="addNumbers()">
+	<label id="sum"></label>
 </form> 
-    </form>
+    
       <script>
-
+	const addNumbers = (num1, num2) => {
+    return num1 + num2; 
+	}
       </script>
     </body>
-  </title>
+  
 </html>
